@@ -291,6 +291,7 @@ body {
     flex-basis: calc((100% - 120px) / 4);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .command-title {
@@ -324,9 +325,22 @@ body {
 .social-link {
     width: 100%;
     height: 100%;
-    display: block;
-    background-repeat: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
     background-color: var(--primary-titele-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--primary-titele-color);
 }
 
 .social-list {
@@ -336,6 +350,12 @@ body {
 
 .social-item+.social-item {
     margin-left: 10px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
 }
 
 
@@ -407,10 +427,16 @@ body {
     background: var(--btn-portfolio-color);
     border: 0;
     border-radius: 4px;
+    display: block;
 }
 
 .btn-portfolio-item:not(:last-child) {
     margin-right: 8px;
+}
+
+.btn-portfolio-item:hover,
+.btn-portfolio-item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .all {
@@ -445,6 +471,11 @@ body {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 90px) / 3);
+}
+
+.portfolio-gallery-list:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ;
 }
 
 .gallery-content {
