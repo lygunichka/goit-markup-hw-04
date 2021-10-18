@@ -143,6 +143,22 @@ body {
     margin-right: 50px;
 }
 
+.header-contacst-link {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacst-link::before {
+    content: '';
+}
+
+.icon-contacst {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-contacst:hover,
+.icon-contacst:focus,
 .header-link:hover,
 .header-link:focus,
 .header-contacst-link:hover,
@@ -363,6 +379,65 @@ body {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
+}
+
+
+/*---!!!COMPANY!!!---*/
+
+.company {
+    text-align: center;
+}
+
+.company-title {
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--secondary-titele-color);
+    margin-bottom: 50px;
+}
+
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 180px) / 6);
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.company-item {
+    background-color: var(--primary-titele-color);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.company-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #afb1b8;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.company-icon {
+    fill: #AFB1B8;
+}
+
+.company-link:focus,
+.company-link:hover {
+    border: 1px solid #2196f3;
+    fill: #2196f3;
+}
+
+.company-link:focus .company-icon,
+.company-link:hover .company-icon {
+    fill: #2196f3;
 }
 
 
