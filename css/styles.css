@@ -417,6 +417,7 @@ body {
     border: 1px solid #afb1b8;
     background: #ffffff;
     border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .company-icon {
@@ -484,6 +485,40 @@ body {
 
 .maps {
     color: var(--primary-titele-color);
+}
+
+
+/*---!!!! Footer-right !!!!!---*/
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-left {
+    margin-right: 70px;
+}
+
+.footer-right-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+}
+
+.footer-social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link .social-icon {
+    fill: var(--primary-titele-color);
 }
 
 
