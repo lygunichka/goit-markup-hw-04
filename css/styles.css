@@ -224,8 +224,15 @@ body {
     margin-right: 30px;
 }
 
-.specifications-item {
-    width: 270px;
+.box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    height: 120px;
+    padding: 25px 0;
+    background: var(--btn-portfolio-color);
+    margin-bottom: 30px;
 }
 
 .specifications-item-title {
