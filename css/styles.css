@@ -579,8 +579,8 @@ body {
     flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-gallery-list:hover,
-.portfolio-gallery-list:focus {
+.portfolio-gallery-link:hover,
+.portfolio-gallery-link:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
