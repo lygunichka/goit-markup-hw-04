@@ -139,7 +139,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header-mail {
+.contacst-item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -246,7 +246,6 @@ body {
     justify-content: center;
     content: '';
     height: 120px;
-    padding: 25px 0;
     background: var(--btn-portfolio-color);
     margin-bottom: 30px;
 }
@@ -417,7 +416,6 @@ body {
     border: 1px solid #afb1b8;
     background: #ffffff;
     border-radius: 4px;
-    padding: 16px 32px;
 }
 
 .company-icon {
@@ -545,11 +543,6 @@ body {
     margin-right: 8px;
 }
 
-.btn-portfolio-item:hover,
-.btn-portfolio-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .all {
     color: var(--primary-titele-color);
     background-color: var(--accent-color);
@@ -566,6 +559,7 @@ body {
 .btn-portfolio:active {
     background-color: var(--accent-color);
     color: var(--primary-titele-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -584,9 +578,9 @@ body {
     flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-gallery-list:hover {
+.portfolio-gallery-list:hover,
+.portfolio-gallery-list:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    ;
 }
 
 .gallery-content {
